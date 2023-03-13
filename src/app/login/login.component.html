@@ -1,0 +1,25 @@
+<div class="login-container">
+
+    <div class="logo">Dev's Movie Site</div>
+    <div class="desc">
+        Dev's movie site, personal project for learning and getting used to making projects with Angular.
+        Type dev in username and 123 for password to proceed to the home page.
+    </div>
+    <img class="penguingamecube" src="assets/penguingamecube.jpg" alt="">
+
+    <div class="login-form">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="form-control" [(ngModel)]="username" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" [(ngModel)]="password" />
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+
+</div>
